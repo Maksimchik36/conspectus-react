@@ -1,8 +1,9 @@
 import './App.css';
-// import Product from './FirstMeetingWithReact/Product';
-// import Profile from './FirstMeetingWithReact/Profile';
-// import Panel from './FirstMeetingWithReact/Panel.jsx';
+import Product from './FirstMeetingWithReact/Product';
+import Profile from './FirstMeetingWithReact/Profile';
+import Panel from './FirstMeetingWithReact/Panel.jsx';
 import BooksList from './FirstMeetingWithReact/CollectionsList';
+import InlineAlert from './Stylization/InlineAlert';
 
 const favoriteBooks = [
   { id: "id-1", name: "JS for beginners" },
@@ -14,7 +15,7 @@ const favoriteBooks = [
 
 function App() {
   return (<div>
-    {/* <h1>Best selling products</h1>
+    <h1>Best selling products:</h1>
     <Product
       imgUrl="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?dpr=2&h=480&w=640"
       name="Tacos With Lime"
@@ -25,15 +26,32 @@ function App() {
       imgUrl="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?dpr=2&h=480&w=640"
       name="Fries and Burger"
       price={14.29}
-    /> */}
+    />
 
-    {/* <Panel title="User profile">
+    <Panel title="User profile:">
       <Profile name="Mango" email="mango@mail.com" />
-    </Panel> */}
+    </Panel>
 
-    <BooksList books={favoriteBooks}/>
+     <h1>Bookslist:</h1>
+    <BooksList books={favoriteBooks} />
+
+      <InlineAlert variant="info">
+        Would you like to browse our recommended products?
+      </InlineAlert>
+      <InlineAlert variant="error">
+        There was an error during your last transaction
+      </InlineAlert>
+      <InlineAlert variant="success">
+        Payment received, thank you for your purchase
+      </InlineAlert>
+      <InlineAlert variant="warning">
+        Please update your profile contact information
+      </InlineAlert>
 
     
+    
+
+
   </div>
   )
 }
