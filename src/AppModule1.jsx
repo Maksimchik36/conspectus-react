@@ -1,24 +1,27 @@
 import './App.css';
-// import Product from './FirstMeetingWithReact/Product';
-// import Profile from './FirstMeetingWithReact/Profile';
-// import Panel from './FirstMeetingWithReact/Panel.jsx';
-// import BooksList from './FirstMeetingWithReact/CollectionsList';
-// import InlineAlert from './Stylization/InlineAlert';
-// import ClassNameAlert from './Stylization/ClassNameAlert';
+import Product from './FirstMeetingWithReact/Product';
+import Profile from './FirstMeetingWithReact/Profile';
+import Panel from './FirstMeetingWithReact/Panel.jsx';
+import BooksList from './FirstMeetingWithReact/CollectionsList';
+import InlineAlert from './Stylization/InlineAlert';
+import ClassNameAlert from './Stylization/ClassNameAlert';
 import ClassNameAlertWithLibraryClsx from './Stylization/ClassNameAlertWithLibraryClsx';
+import LoginButton from './Stylization/LoginButton';
+import FollowButton from './Stylization/FollowButton';
+import AlertModuleCss from './Stylization/AlertModuleCss';
 
 
-// const favoriteBooks = [
-//   { id: "id-1", name: "JS for beginners" },
-//   { id: "id-2", name: "React basics" },
-//   { id: "id-3", name: "React Router overview" },
-//   { id: "id-4", name: "Redux in depth" },
-// ];
+const favoriteBooks = [
+  { id: "id-1", name: "JS for beginners" },
+  { id: "id-2", name: "React basics" },
+  { id: "id-3", name: "React Router overview" },
+  { id: "id-4", name: "Redux in depth" },
+];
 
 
-function App() {
+function AppModule1() {
   return (<div>
-    {/* <h1>Best selling products:</h1>
+    <h1>Best selling products:</h1>
     <Product
       imgUrl="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?dpr=2&h=480&w=640"
       name="Tacos With Lime"
@@ -35,8 +38,8 @@ function App() {
       <Profile name="Mango" email="mango@mail.com" />
     </Panel>
 
-     <h1>Bookslist:</h1>
-    <BooksList books={favoriteBooks} />
+      <h1>Bookslist:</h1>
+      <BooksList books={favoriteBooks} />
 
       <InlineAlert variant="info">
         Would you like to browse our recommended products?
@@ -49,9 +52,9 @@ function App() {
       </InlineAlert>
       <InlineAlert variant="warning">
         Please update your profile contact information
-      </InlineAlert> */}
+      </InlineAlert>
 
-     {/* <ClassNameAlert variant="info">
+     <ClassNameAlert variant="info">
         Would you like to browse our recommended products?
       </ClassNameAlert>
       <ClassNameAlert variant="error" outlined>
@@ -62,7 +65,7 @@ function App() {
       </ClassNameAlert>
       <ClassNameAlert variant="warning" outlined>
         Please update your profile contact information
-      </ClassNameAlert> */}
+      </ClassNameAlert>
     
      <ClassNameAlertWithLibraryClsx variant="info" outlined>
         Would you like to browse our recommended products?
@@ -76,13 +79,29 @@ function App() {
       <ClassNameAlertWithLibraryClsx variant="warning" >
         Please update your profile contact information
       </ClassNameAlertWithLibraryClsx>
+    
+    <LoginButton/>
+    <FollowButton/>
+
+    <AlertModuleCss variant="info" >
+        Would you like to browse our recommended products?
+      </AlertModuleCss>
+      <AlertModuleCss variant="error" outlined>
+        There was an error during your last transaction
+      </AlertModuleCss>
+      <AlertModuleCss variant="success" elevated>
+        Payment received, thank you for your purchase
+      </AlertModuleCss>
+      <AlertModuleCss variant="warning" outlined>
+        Please update your profile contact information
+      </AlertModuleCss>
 
 
   </div>
   )
 }
 
-export default App;
+export default AppModule1;
 
 
 

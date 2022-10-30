@@ -1,0 +1,13 @@
+button{
+    border-radius: 10%;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: rgb(158, 252, 252);
+}
+
+.secondary {
+    background-color: rgb(240, 148, 240);
+}
