@@ -2,8 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import AppModule1 from './AppModule1';
-import AppModule2 from './AppModule2';
+// import AppModule2 from './AppModule2';
 // import AppClassForButtonRiseOfState from './AppClassForButtonRiseOfState';
+// import AppModule3 from './AppModule3';
+import AppForHTTPRequests from './AppForHTTPRequests';
+
 
 import reportWebVitals from './reportWebVitals';
 
@@ -12,9 +15,13 @@ root.render(
   <React.StrictMode>
     {/* <AppModule1 /> */}
 
-    <AppModule2 />
+    {/* <AppModule2 /> */}
     
     {/* <AppClassForButtonRiseOfState /> */}
+
+    {/* <AppModule3 /> */}
+
+    <AppForHTTPRequests></AppForHTTPRequests>
 
   </React.StrictMode>
 );
