@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ButtonRiseOfState from './EventsAndState/ButtonRiseOfState';
 
 
-class AppFClassForButtonRiseOfState extends Component {
+class AppClassForButtonRiseOfState extends Component {
   state = {
     message: new Date().toLocaleTimeString(),
   };
@@ -26,4 +26,4 @@ class AppFClassForButtonRiseOfState extends Component {
 }
 
 
-export default AppFClassForButtonRiseOfState;
+export default AppClassForButtonRiseOfState;
