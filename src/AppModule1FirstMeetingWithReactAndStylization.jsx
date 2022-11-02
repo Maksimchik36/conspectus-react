@@ -19,7 +19,7 @@ const favoriteBooks = [
 ];
 
 
-function AppModule1() {
+function AppModule1FirstMeetingWithReactAndStylization() {
   return (<div>
     <h1>Best selling products:</h1>
     <Product
@@ -101,7 +101,7 @@ function AppModule1() {
   )
 }
 
-export default AppModule1;
+export default AppModule1FirstMeetingWithReactAndStylization;
 
 
 

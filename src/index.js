@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import AppModule1 from './AppModule1';
-// import AppModule2 from './AppModule2';
+// import AppModule1FirstMeetingWithReactAndStylization from './AppModule1FirstMeetingWithReactAndStylization';
+// import AppModule2EventsAndStateAndForms from './AppModule2EventsAndStateAndForms';
 // import AppClassForButtonRiseOfState from './AppClassForButtonRiseOfState';
-// import AppModule3 from './AppModule3';
-import AppForHTTPRequests from './AppForHTTPRequests';
+// import AppModule3LifeCycleClassComponent from './AppModule3LifeCycleClassComponent';
+// import AppForHTTPRequests from './AppForHTTPRequests';
+import AppModule4Hooks from './AppModule4Hooks';
 
 
 import reportWebVitals from './reportWebVitals';
@@ -13,15 +14,17 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <AppModule1 /> */}
+    {/* <AppModule1FirstMeetingWithReactAndStylization /> */}
 
-    {/* <AppModule2 /> */}
+    {/* <AppModule2EventsAndStateAndForms /> */}
     
     {/* <AppClassForButtonRiseOfState /> */}
 
-    {/* <AppModule3 /> */}
+    {/* <AppModule3LifeCycleClassComponent /> */}
 
-    <AppForHTTPRequests></AppForHTTPRequests>
+    {/* <AppForHTTPRequests></AppForHTTPRequests> */}
+
+    <AppModule4Hooks></AppModule4Hooks>
 
   </React.StrictMode>
 );

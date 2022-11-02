@@ -2,7 +2,7 @@ import './App.css';
 import ErrorBoundary from './LifeCycleClassComponent/ErrorBoundary';
 
 
-function AppModule3() {
+function AppModule3LifeCycleClassComponent() {
   return (
     <div>
       <ErrorBoundary>Салют!</ErrorBoundary>
@@ -11,4 +11,4 @@ function AppModule3() {
 }
 
 
-export default AppModule3;
+export default AppModule3LifeCycleClassComponent;
