@@ -6,10 +6,19 @@ import './index.css';
 // import AppClassForButtonRiseOfState from './AppClassForButtonRiseOfState';
 // import AppModule3LifeCycleClassComponent from './AppModule3LifeCycleClassComponent';
 // import AppForHTTPRequests from './AppForHTTPRequests';
-import AppModule4Hooks from './AppModule4Hooks';
-
+// import AppModule4Hooks from './AppModule4Hooks';
+// import { MyContext } from './Hooks/CreateContextAndHookUseContext.jsx';
+// import AppForUseContext from './AppForUseContext';
+// import AppForCustomUseContext from './AppForCustomUseContext';
+// import { UserCustomProvider } from './Hooks/UserCustomContext.jsx';
+// import AppWithHookUseRef from './AppWithHookUseRef.jsx';
+// import AppRefIsNotReactive from './AppRefIsNotReactive';
+// import AppForVideoPlayerWithHookUseRef from './AppForVideoPlayerWithHookUseRef';
+// import AppForCustomButtonForwardRefForHookUseRef from './AppForCustomButtonForwardRefForHookUseRef';
+import AppWithHookUseMemo from './AppWithHookUseMemo';
 
 import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,8 +33,30 @@ root.render(
 
     {/* <AppForHTTPRequests></AppForHTTPRequests> */}
 
-    <AppModule4Hooks></AppModule4Hooks>
+    {/* <AppModule4Hooks></AppModule4Hooks> */}
 
+{/* 
+    <MyContext.Provider value={{ username: "Mango" }}>
+      <AppForUseContext></AppForUseContext>
+    </MyContext.Provider> */}
+
+
+    {/* <UserCustomProvider>
+      <AppForCustomUseContext></AppForCustomUseContext>
+    </UserCustomProvider> */}
+    
+
+    {/* <AppWithHookUseRef></AppWithHookUseRef> */}
+
+    {/* <AppRefIsNotReactive></AppRefIsNotReactive> */}
+
+    {/* <AppForVideoPlayerWithHookUseRef></AppForVideoPlayerWithHookUseRef> */}
+
+    {/* <AppForCustomButtonForwardRefForHookUseRef></AppForCustomButtonForwardRefForHookUseRef> */}
+
+    <AppWithHookUseMemo></AppWithHookUseMemo>
+
+    
   </React.StrictMode>
 );
 

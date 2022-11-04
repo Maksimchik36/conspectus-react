@@ -5,9 +5,9 @@ import './App.css';
 // import HookUseEffectAnalogComponentDidUpdate from './Hooks/HookUseEffectAnalogComponentDidUpdate';
 // import HookUseEffectAnalogComponentWillUnmount from './Hooks/HookUseEffectAnalogComponentWillUnmount';
 // import HookUseEffect3Phases from './Hooks/HookUseEffect3Phases';
-import ComponentAForUseToggle from './Hooks/ComponentAForUseToggle';
-import ComponentBForUseToggle from './Hooks/ComponentBForUseToggle';
-import ComponentMineForUseToggle from './Hooks/ComponentMineForUseToggle';
+// import ComponentAForUseToggle from './Hooks/ComponentAForUseToggle';
+// import ComponentBForUseToggle from './Hooks/ComponentBForUseToggle';
+// import ComponentMineForUseToggle from './Hooks/ComponentMineForUseToggle';
 
 
 function App() {
@@ -25,10 +25,11 @@ function App() {
 
       {/* <HookUseEffect3Phases></HookUseEffect3Phases> */}
 
-      <ComponentAForUseToggle></ComponentAForUseToggle>
+      {/* <ComponentAForUseToggle></ComponentAForUseToggle>
       <ComponentBForUseToggle></ComponentBForUseToggle>
-      <ComponentMineForUseToggle></ComponentMineForUseToggle>
+      <ComponentMineForUseToggle></ComponentMineForUseToggle> */}
 
+      
     </div>
   );
 }
