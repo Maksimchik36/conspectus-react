@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ArticleList from "./HTTPRequests/ArticleList";
 import api from './services/api';
+import Button from "./Stylization/Button";
 
 
 class AppForHTTPRequests extends Component {
@@ -26,6 +27,7 @@ class AppForHTTPRequests extends Component {
     const { articles, isLoading, error } = this.state;
     return (
       <div>
+        <Button><a href="http://localhost:3000/conspectus-react">Go back</a></Button>
         {error && <p>Whoops, something went wrong: {error.message}</p>}
         {isLoading && <p>Loading...</p>}
         {articles.length > 0 && <ArticleList articles={articles} />}        

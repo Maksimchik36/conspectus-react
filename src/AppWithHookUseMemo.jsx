@@ -2,6 +2,7 @@
 
 
 import { useState, useMemo } from "react";
+import Button from "./Stylization/Button";
 
 const AppWithHookUseMemo = ({ someProp }) => {
   const [planets, setPlanets] = useState(["Earth", "Mars", "Jupiter", "Venus"]);
@@ -19,6 +20,7 @@ const AppWithHookUseMemo = ({ someProp }) => {
 
   return (
     <div>
+      <Button><a href="http://localhost:3000/conspectus-react">Go back</a></Button>
       <div>Some prop: {someProp}</div>
       <button onClick={() => setClicks(clicks + 1)}>
         Number of clicks: {clicks}

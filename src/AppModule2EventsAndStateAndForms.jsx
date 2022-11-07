@@ -8,11 +8,13 @@ import UncontrolledLoginFormClass from './Forms/UncontrolledLoginFormClass';
 import ControlledLoginFormClass from './Forms/ControlledLoginFormClass';
 import SignUpFormClass from './Forms/SignUpFormClass';
 import GenerateUniqueIdForFormElementsClassWithNanoid from './Forms/GenerateUniqueIdForFormElementsClassWithNanoid';
+import Button from './Stylization/Button';
 
 
 function AppModule2EventsAndStateAndForms() {
   return (
     <div>
+      <Button><a href="http://localhost:3000/conspectus-react">Go back</a></Button>
       <MyClassComponent />  
       
       <ClassCounter />

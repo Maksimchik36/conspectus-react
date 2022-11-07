@@ -1,5 +1,6 @@
 import { useRef, useEffect } from "react";
 import CustomButtonForwardRefForHookUseRef from "./Hooks/CustomButtonForwardRefForHookUseRef";
+import Button from "./Stylization/Button";
 
 
 const AppForCustomButtonForwardRefForHookUseRef = () => {
@@ -7,7 +8,10 @@ const AppForCustomButtonForwardRefForHookUseRef = () => {
 
   useEffect(() => btnRef.current.focus(), []);
 
-  return <CustomButtonForwardRefForHookUseRef ref={btnRef}>Button with forwarded ref</CustomButtonForwardRefForHookUseRef>;
+  return <>
+    <Button><a href="http://localhost:3000/conspectus-react">Go back</a></Button>
+    <CustomButtonForwardRefForHookUseRef ref={btnRef}>Button with forwarded ref</CustomButtonForwardRefForHookUseRef> 
+  </>
 };
 
 

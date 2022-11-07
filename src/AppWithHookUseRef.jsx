@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import Button from "./Stylization/Button";
 
 const AppWithHookUseRef = () => {
   const [value, setValue] = useState(0);
@@ -22,6 +23,7 @@ const AppWithHookUseRef = () => {
 
   return (
     <>
+      <Button><a href="http://localhost:3000/conspectus-react">Go back</a></Button>
       <button onClick={() => setValue(value + 1)}>
         Update value to trigger re-render
       </button>

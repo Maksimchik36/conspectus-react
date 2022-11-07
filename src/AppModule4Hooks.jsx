@@ -1,33 +1,35 @@
 import './App.css';
-// import HookUseState from './Hooks/HookUseState';
-// import HookUseEffect from './Hooks/HookUseEffect';
-// import HookUseEffectAnalogComponentDidMount from './Hooks/HookUseEffectAnalogComponentDidMount';
-// import HookUseEffectAnalogComponentDidUpdate from './Hooks/HookUseEffectAnalogComponentDidUpdate';
-// import HookUseEffectAnalogComponentWillUnmount from './Hooks/HookUseEffectAnalogComponentWillUnmount';
-// import HookUseEffect3Phases from './Hooks/HookUseEffect3Phases';
-// import ComponentAForUseToggle from './Hooks/ComponentAForUseToggle';
-// import ComponentBForUseToggle from './Hooks/ComponentBForUseToggle';
-// import ComponentMineForUseToggle from './Hooks/ComponentMineForUseToggle';
+import Button from './Stylization/Button';
+import HookUseState from './Hooks/HookUseState';
+import HookUseEffect from './Hooks/HookUseEffect';
+import HookUseEffectAnalogComponentDidMount from './Hooks/HookUseEffectAnalogComponentDidMount';
+import HookUseEffectAnalogComponentDidUpdate from './Hooks/HookUseEffectAnalogComponentDidUpdate';
+import HookUseEffectAnalogComponentWillUnmount from './Hooks/HookUseEffectAnalogComponentWillUnmount';
+import HookUseEffect3Phases from './Hooks/HookUseEffect3Phases';
+import ComponentAForUseToggle from './Hooks/ComponentAForUseToggle';
+import ComponentBForUseToggle from './Hooks/ComponentBForUseToggle';
+import ComponentMineForUseToggle from './Hooks/ComponentMineForUseToggle';
 
 
 function App() {
   return (
-      <div>
-          {/* <HookUseState></HookUseState> */}
+    <div>
+      <Button><a href="http://localhost:3000/conspectus-react">Go back</a></Button>
+          <HookUseState></HookUseState>
 
-          {/* <HookUseEffect></HookUseEffect> */}
+          <HookUseEffect></HookUseEffect>
 
-      {/* <HookUseEffectAnalogComponentDidMount></HookUseEffectAnalogComponentDidMount> */}
+      <HookUseEffectAnalogComponentDidMount></HookUseEffectAnalogComponentDidMount>
       
-      {/* <HookUseEffectAnalogComponentDidUpdate></HookUseEffectAnalogComponentDidUpdate> */}
+      <HookUseEffectAnalogComponentDidUpdate></HookUseEffectAnalogComponentDidUpdate>
 
-      {/* <HookUseEffectAnalogComponentWillUnmount></HookUseEffectAnalogComponentWillUnmount> */}
+      <HookUseEffectAnalogComponentWillUnmount></HookUseEffectAnalogComponentWillUnmount>
 
-      {/* <HookUseEffect3Phases></HookUseEffect3Phases> */}
+      <HookUseEffect3Phases></HookUseEffect3Phases>
 
-      {/* <ComponentAForUseToggle></ComponentAForUseToggle>
+      <ComponentAForUseToggle></ComponentAForUseToggle>
       <ComponentBForUseToggle></ComponentBForUseToggle>
-      <ComponentMineForUseToggle></ComponentMineForUseToggle> */}
+      <ComponentMineForUseToggle></ComponentMineForUseToggle>
 
       
     </div>

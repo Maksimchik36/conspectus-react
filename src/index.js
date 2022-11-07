@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from "react-router-dom";
 import './index.css';
 // import AppModule1FirstMeetingWithReactAndStylization from './AppModule1FirstMeetingWithReactAndStylization';
 // import AppModule2EventsAndStateAndForms from './AppModule2EventsAndStateAndForms';
@@ -15,48 +16,18 @@ import './index.css';
 // import AppRefIsNotReactive from './AppRefIsNotReactive';
 // import AppForVideoPlayerWithHookUseRef from './AppForVideoPlayerWithHookUseRef';
 // import AppForCustomButtonForwardRefForHookUseRef from './AppForCustomButtonForwardRefForHookUseRef';
-import AppWithHookUseMemo from './AppWithHookUseMemo';
+// import AppWithHookUseMemo from './AppWithHookUseMemo';
 
 import reportWebVitals from './reportWebVitals';
+import AppMain from './AppMain';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <AppModule1FirstMeetingWithReactAndStylization /> */}
-
-    {/* <AppModule2EventsAndStateAndForms /> */}
-    
-    {/* <AppClassForButtonRiseOfState /> */}
-
-    {/* <AppModule3LifeCycleClassComponent /> */}
-
-    {/* <AppForHTTPRequests></AppForHTTPRequests> */}
-
-    {/* <AppModule4Hooks></AppModule4Hooks> */}
-
-{/* 
-    <MyContext.Provider value={{ username: "Mango" }}>
-      <AppForUseContext></AppForUseContext>
-    </MyContext.Provider> */}
-
-
-    {/* <UserCustomProvider>
-      <AppForCustomUseContext></AppForCustomUseContext>
-    </UserCustomProvider> */}
-    
-
-    {/* <AppWithHookUseRef></AppWithHookUseRef> */}
-
-    {/* <AppRefIsNotReactive></AppRefIsNotReactive> */}
-
-    {/* <AppForVideoPlayerWithHookUseRef></AppForVideoPlayerWithHookUseRef> */}
-
-    {/* <AppForCustomButtonForwardRefForHookUseRef></AppForCustomButtonForwardRefForHookUseRef> */}
-
-    <AppWithHookUseMemo></AppWithHookUseMemo>
-
-    
+    <BrowserRouter>
+      <AppMain/>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

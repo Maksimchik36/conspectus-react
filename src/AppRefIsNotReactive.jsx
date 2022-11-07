@@ -2,6 +2,7 @@
 
 
 import { useEffect, useRef } from "react";
+import Button from "./Stylization/Button";
 
 const AppRefIsNotReactive = () => {
   const valueRef = useRef(0);
@@ -17,7 +18,10 @@ const AppRefIsNotReactive = () => {
     valueRef.current += 1;
   };
 
-  return <button onClick={handleClick}>Click to update ref value</button>;
+  return <>
+    <Button><a href="http://localhost:3000/conspectus-react">Go back</a></Button>
+    <button onClick={handleClick}>Click to update ref value</button>
+  </>
 };
 
 

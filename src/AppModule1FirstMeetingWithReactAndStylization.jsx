@@ -9,6 +9,7 @@ import ClassNameAlertWithLibraryClsx from './Stylization/ClassNameAlertWithLibra
 import LoginButton from './Stylization/LoginButton';
 import FollowButton from './Stylization/FollowButton';
 import AlertModuleCss from './Stylization/AlertModuleCss';
+import Button from './Stylization/Button';
 
 
 const favoriteBooks = [
@@ -21,6 +22,7 @@ const favoriteBooks = [
 
 function AppModule1FirstMeetingWithReactAndStylization() {
   return (<div>
+    <Button><a href="http://localhost:3000/conspectus-react">Go back</a></Button>
     <h1>Best selling products:</h1>
     <Product
       imgUrl="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?dpr=2&h=480&w=640"
