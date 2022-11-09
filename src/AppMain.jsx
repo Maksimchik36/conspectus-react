@@ -1,20 +1,25 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
-import AppModule1FirstMeetingWithReactAndStylization from './AppModule1FirstMeetingWithReactAndStylization';
-import AppModule2EventsAndStateAndForms from './AppModule2EventsAndStateAndForms';
-import AppClassForButtonRiseOfState from './AppClassForButtonRiseOfState';
-import AppModule3LifeCycleClassComponent from './AppModule3LifeCycleClassComponent';
-import AppForHTTPRequests from './AppForHTTPRequests';
-import AppModule4Hooks from './AppModule4Hooks';
+import AppModule1FirstMeetingWithReactAndStylization from './pages/AppModule1FirstMeetingWithReactAndStylization';
+import AppModule2EventsAndStateAndForms from './pages/AppModule2EventsAndStateAndForms';
+import AppClassForButtonRiseOfState from './pages/AppClassForButtonRiseOfState';
+import AppModule3LifeCycleClassComponent from './pages/AppModule3LifeCycleClassComponent';
+import AppForHTTPRequests from './pages/AppForHTTPRequests';
+import AppModule4Hooks from './pages/AppModule4Hooks';
 import { MyContext } from './Hooks/CreateContextAndHookUseContext.jsx';
-import AppForUseContext from './AppForUseContext';
-import AppForCustomUseContext from './AppForCustomUseContext';
+import AppForUseContext from './pages/AppForUseContext';
+import AppForCustomUseContext from './pages/AppForCustomUseContext';
 import { UserCustomProvider } from './Hooks/UserCustomContext.jsx';
-import AppWithHookUseRef from './AppWithHookUseRef.jsx';
-import AppRefIsNotReactive from './AppRefIsNotReactive';
-import AppForVideoPlayerWithHookUseRef from './AppForVideoPlayerWithHookUseRef';
-import AppForCustomButtonForwardRefForHookUseRef from './AppForCustomButtonForwardRefForHookUseRef';
-import AppWithHookUseMemo from './AppWithHookUseMemo';
+import AppWithHookUseRef from './pages/AppWithHookUseRef.jsx';
+import AppRefIsNotReactive from './pages/AppRefIsNotReactive';
+import AppForVideoPlayerWithHookUseRef from './pages/AppForVideoPlayerWithHookUseRef';
+import AppForCustomButtonForwardRefForHookUseRef from './pages/AppForCustomButtonForwardRefForHookUseRef';
+import AppWithHookUseMemo from './pages/AppWithHookUseMemo';
+import NotFound from "./NotFound";
+import CollectionsList from "./FirstMeetingWithReact/CollectionsList";
+import Book from "./FirstMeetingWithReact/Book";
+import AppWithHookUseParams from "./pages/AppWithHookUseParams";
+import AppModule5Routing from './pages/AppModule5Routing';
 
 
 const AppMain = () => {
@@ -34,7 +39,14 @@ const AppMain = () => {
         <Route path = "/RefIsNotReactive" element={<AppRefIsNotReactive />} />
         <Route path = "/VideoPlayerWithHookUseRef" element={<AppForVideoPlayerWithHookUseRef />} />
         <Route path = "/CustomButtonForwardRefForHookUseRef" element={<AppForCustomButtonForwardRefForHookUseRef />} />
-        <Route path = "/HookUseMemo" element={<AppWithHookUseMemo />} />
+        <Route path="/HookUseMemo" element={<AppWithHookUseMemo />} />
+        <Route path = "/BooksList" element={<CollectionsList books={[{id:2, name:"Физика"}, {id:3, name:"Химия"}]} />}></Route>  
+        <Route path = "/BooksList/:id" element={<Book />}></Route>
+        <Route path = "/HookUseParams" element={<AppWithHookUseParams />}></Route>
+        <Route path = "/Routing" element={<AppModule5Routing/>}></Route>
+        
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

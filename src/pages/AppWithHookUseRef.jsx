@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
-import Button from "./Stylization/Button";
+import Button from "../Stylization/Button";
+import { NavLink } from "react-router-dom";
+
 
 const AppWithHookUseRef = () => {
   const [value, setValue] = useState(0);
@@ -23,7 +25,7 @@ const AppWithHookUseRef = () => {
 
   return (
     <>
-      <Button><a href="http://localhost:3000/conspectus-react">Go back</a></Button>
+      <Button><NavLink to="/conspectus-react">Go back</NavLink></Button>
       <button onClick={() => setValue(value + 1)}>
         Update value to trigger re-render
       </button>

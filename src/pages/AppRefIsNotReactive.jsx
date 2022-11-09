@@ -2,7 +2,9 @@
 
 
 import { useEffect, useRef } from "react";
-import Button from "./Stylization/Button";
+import Button from "../Stylization/Button";
+import { NavLink } from "react-router-dom";
+
 
 const AppRefIsNotReactive = () => {
   const valueRef = useRef(0);
@@ -19,7 +21,7 @@ const AppRefIsNotReactive = () => {
   };
 
   return <>
-    <Button><a href="http://localhost:3000/conspectus-react">Go back</a></Button>
+    <Button><NavLink to="/conspectus-react">Go back</NavLink></Button>
     <button onClick={handleClick}>Click to update ref value</button>
   </>
 };

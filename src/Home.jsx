@@ -1,46 +1,58 @@
+import { NavLink } from "react-router-dom";
+
+
 const Home = () => {
     return (
         <>
             <h1>Conspectus React</h1>
             <ul>
                 <li>
-                    <a href="http://localhost:3000/FirstMeetingWithReactAndStylization">First Meeting With React And Stylization</a>
+                    <NavLink to="/FirstMeetingWithReactAndStylization">First Meeting With React And Stylization</NavLink>
                 </li>
                 <li>
-                    <a href="http://localhost:3000/EventsAndStateAndForms">Events And State And Forms</a>
+                    <NavLink to="/EventsAndStateAndForms">Events And State And Forms</NavLink>
                 </li>
                 <li>
-                    <a href="http://localhost:3000/ClassForButtonRiseOfState">Class For Button Rise Of State</a>
+                    <NavLink to="/ClassForButtonRiseOfState">Class For Button Rise Of State</NavLink>
                 </li>
                 <li>
-                    <a href="http://localhost:3000/LifeCycleClassComponent">Life Cycle Class Component</a>
+                    <NavLink to="/LifeCycleClassComponent">Life Cycle Class Component</NavLink>
                 </li>
                 <li>
-                    <a href="http://localhost:3000/HTTPRequests">HTTP Requests</a>
+                    <NavLink to="/HTTPRequests">HTTP Requests</NavLink>
                 </li>
                 <li>
-                    <a href="http://localhost:3000/Hooks">Hooks</a>
+                    <NavLink to="/Hooks">Hooks</NavLink>
                 </li>
                 <li>
-                    <a href="http://localhost:3000/UseContext">UseContext</a>
+                    <NavLink to="/UseContext">UseContext</NavLink>
                 </li>
                 <li>
-                    <a href="http://localhost:3000/CustomUseContext">Custom UseContext</a>
+                    <NavLink to="/CustomUseContext">Custom UseContext</NavLink>
                 </li>
                 <li>
-                    <a href="http://localhost:3000/HookUseRef">Hook UseRef</a>
+                    <NavLink to="/HookUseRef">Hook UseRef</NavLink>
                 </li>
                 <li>
-                    <a href="http://localhost:3000/RefIsNotReactive">Ref Is Not Reactive</a>
+                    <NavLink to="/RefIsNotReactive">Ref Is Not Reactive</NavLink>
                 </li>
                 <li>
-                    <a href="http://localhost:3000/VideoPlayerWithHookUseRef">Video Player With Hook UseRef</a>
+                    <NavLink to="/VideoPlayerWithHookUseRef">Video Player With Hook UseRef</NavLink>
                 </li>
                 <li>
-                    <a href="http://localhost:3000/CustomButtonForwardRefForHookUseRef">Custom Button Forward Ref For Hook UseRef</a>
+                    <NavLink to="/CustomButtonForwardRefForHookUseRef">Custom Button Forward Ref For Hook UseRef</NavLink>
                 </li>
                 <li>
-                    <a href="http://localhost:3000/HookUseMemo">Hook UseMemo</a>
+                    <NavLink to="/HookUseMemo">Hook UseMemo</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/BooksList">Booklist</NavLink>
+                </li>  
+                <li>
+                    <NavLink to="/HookUseParams">HookUseParams</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Routing">Routing</NavLink>
                 </li>
             </ul>
         </>

@@ -1,15 +1,16 @@
-import './App.css';
-import Product from './FirstMeetingWithReact/Product';
-import Profile from './FirstMeetingWithReact/Profile';
-import Panel from './FirstMeetingWithReact/Panel.jsx';
-import BooksList from './FirstMeetingWithReact/CollectionsList';
-import InlineAlert from './Stylization/InlineAlert';
-import ClassNameAlert from './Stylization/ClassNameAlert';
-import ClassNameAlertWithLibraryClsx from './Stylization/ClassNameAlertWithLibraryClsx';
-import LoginButton from './Stylization/LoginButton';
-import FollowButton from './Stylization/FollowButton';
-import AlertModuleCss from './Stylization/AlertModuleCss';
-import Button from './Stylization/Button';
+import '../App.css';
+import Product from '../FirstMeetingWithReact/Product';
+import Profile from '../FirstMeetingWithReact/Profile';
+import Panel from '../FirstMeetingWithReact/Panel.jsx';
+import BooksList from '../FirstMeetingWithReact/CollectionsList';
+import InlineAlert from '../Stylization/InlineAlert';
+import ClassNameAlert from '../Stylization/ClassNameAlert';
+import ClassNameAlertWithLibraryClsx from '../Stylization/ClassNameAlertWithLibraryClsx';
+import LoginButton from '../Stylization/LoginButton';
+import FollowButton from '../Stylization/FollowButton';
+import AlertModuleCss from '../Stylization/AlertModuleCss';
+import Button from '../Stylization/Button';
+import { NavLink } from "react-router-dom";
 
 
 const favoriteBooks = [
@@ -22,7 +23,7 @@ const favoriteBooks = [
 
 function AppModule1FirstMeetingWithReactAndStylization() {
   return (<div>
-    <Button><a href="http://localhost:3000/conspectus-react">Go back</a></Button>
+    <Button><NavLink to="/conspectus-react">Go back</NavLink></Button>
     <h1>Best selling products:</h1>
     <Product
       imgUrl="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?dpr=2&h=480&w=640"

@@ -1,6 +1,8 @@
 import { useRef, useEffect } from "react";
-import CustomButtonForwardRefForHookUseRef from "./Hooks/CustomButtonForwardRefForHookUseRef";
-import Button from "./Stylization/Button";
+import CustomButtonForwardRefForHookUseRef from "../Hooks/CustomButtonForwardRefForHookUseRef";
+import Button from "../Stylization/Button";
+import { NavLink } from "react-router-dom";
+
 
 
 const AppForCustomButtonForwardRefForHookUseRef = () => {
@@ -9,7 +11,7 @@ const AppForCustomButtonForwardRefForHookUseRef = () => {
   useEffect(() => btnRef.current.focus(), []);
 
   return <>
-    <Button><a href="http://localhost:3000/conspectus-react">Go back</a></Button>
+    <Button><NavLink to="/conspectus-react">Go back</NavLink></Button>
     <CustomButtonForwardRefForHookUseRef ref={btnRef}>Button with forwarded ref</CustomButtonForwardRefForHookUseRef> 
   </>
 };
